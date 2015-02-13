@@ -1,0 +1,3 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px){.banner{ height:80%;min-height:80%}.logo{margin-left:5%}.mensaje{left:auto;right:10%;font-size:2.3em;font-weight:100}}
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
