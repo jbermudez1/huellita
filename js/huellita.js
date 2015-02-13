@@ -33,14 +33,33 @@ jQuery(function($) {
 
     $form.find("button").prop("disabled", true);
     Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
-    
-};
 
+    
 /* Previene que la información de la forma sea enviada al servidor */
 
     return false;
   });
-  var conektaErrorResponseHandler;
+});
+
+// BIEN
+var conektaSuccessResponseHandler;
+conektaSuccessResponseHandler = function(token) {
+  var $form;
+  $form = $("#card-form");
+
+  
+/* Inserta el token_id en la forma para que se envíe al servidor */
+
+  $form.append($("<input type=\"hidden\" name=\"conektaTokenId\" />").val(token.id));
+
+  
+/* and submit */
+console.log(token.id)
+  // $form.get(0).submit();
+};
+
+// MAL
+var conektaErrorResponseHandler;
 conektaErrorResponseHandler = function(response) {
   var $form;
   $form = $("#card-form");
@@ -51,4 +70,3 @@ conektaErrorResponseHandler = function(response) {
   $form.find(".card-errors").text(response.message);
   $form.find("button").prop("disabled", false);
 };
-});
