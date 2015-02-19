@@ -1,0 +1,21 @@
+{
+	"name": 		"HuellitaApp",
+	"descripton:":	"Aplicacion para realizar donaciones a Huellita",
+	"type":			"project",
+	"authors": [
+		{
+			"name":		"Javier Bermudez",
+			"email":	"jbermudez@proyeccione.com",
+			"role":		"designer"
+		},
+		{
+			"name":		"Yoel Monzon",
+			"email":	"yoel@apptitude.soy",
+			"role":		"developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"conekta/conekta-php": "dev-master"
+	}
+}
