@@ -17,5 +17,10 @@
 	"require": {
 		"php": ">=5.3.0",
 		"conekta/conekta-php": "dev-master"
-	}
+	},
+    "autoload": {
+      "psr-4": {
+        "App\\": "app/"
+      }
+    }
 }
