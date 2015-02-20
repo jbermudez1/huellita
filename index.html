@@ -14,7 +14,7 @@
   <body>
     <section class="banner">
       <figure class="logo">
-        <img src="img/huellita-logo.png">
+        <img src="img/huellita-logosvg.svg">
       </figure>
       <p class="mensaje">EL SERÍA INCAPAZ DE<br><span class="resaltado">IGNORARTE</span><br>
         <span class="chico">Fundación Huellita con Causa A.C.</span>
@@ -23,7 +23,7 @@
      <section class="container cuerpo">
       <div class="row">
         <div class="col-sm-4">
-          <p>Dejar de Ignorarlos</p>
+          <p class="titulos1">Dejar de Ignorarlos</p><hr>
             <form action="app/Core/manager.php" method="POST" id="card-form">
               <div class="donativo">
                 <span class="pesos">$</span>
@@ -42,13 +42,13 @@
               <div class="row">
                 <div class="col-xs-3">
                     <span>CVC</span><br>
-                    <input type="text" size="4" data-conekta="card[cvc]"/>
+                    <input type="text" class="form-control" size="4" style="display:inline-block; width:auto" data-conekta="card[cvc]"/>
                 </div>
                 <div class="col-xs-9 text-right">
-                  <span>Expiración (MM/AAAA)</span><br>
-                  <input type="text" size="2" data-conekta="card[exp_month]"/>
+                  <span>Expiración</span><br>
+                  <input type="text" size="2" class="form-control" style="display:inline-block; width:auto" data-conekta="card[exp_month]" placeholder="MM"/>
                   <span>/</span>
-                <input type="text" size="4" data-conekta="card[exp_year]"/>
+                <input type="text" size="4" class="form-control" style="display:inline-block; width:auto"  data-conekta="card[exp_year]" placeholder="AAAA"/>
                 </div>
               </div>
               <button class="donar" type="submit">Donar</button> 
@@ -56,9 +56,15 @@
           </div>
           
           <div class="col-sm-4">
-            <p>Tambíen puedes Donar en</p>
+            <p class="titulos1">Tambíen puedes donar en</p><hr>
           </div>
-        <div class="col-sm-4">ó donativos en especie</div>
+        <div class="col-sm-4">
+          <p class="titulos1">ó con donativos en especie</p><hr>
+          <p>Todos los jueves de 5Pm. a 8Pm. en Jardín Botanico Culiacán.</p>
+          <a href="https://www.google.com.mx/maps/place/Jard%C3%ADn+Bot%C3%A1nico+Culiac%C3%A1n/@24.826097,-107.386361,17z/data=!3m1!4b1!4m2!3m1!1s0x86bcda02be4b8197:0xce96795018e31371" target="_blank">
+          <img src="img/jardin.png"></a>
+          
+        </div>
       </div>
     </section>   
 

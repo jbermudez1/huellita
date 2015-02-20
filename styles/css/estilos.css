@@ -20,7 +20,7 @@ img {
   position: relative;
 }
 .logo {
-  width: 25%;
+  width: 35%;
   padding: 1em;
 }
 .mensaje {
@@ -67,4 +67,10 @@ img {
   border-radius: 20em;
   background-color: white;
   border: 1px solid #ccc;
+}
+.cuerpo {
+  margin-top: 1em;
+}
+.titulos1 {
+  font-size: 1.5em;
 }
