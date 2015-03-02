@@ -2,8 +2,8 @@
 
 @media (min-width: 768px) { 
 .banner {
-	height: 80%;
-	min-height: 80%;
+	height: 100%;
+	min-height: 100%;
 }
 .logo {
 	margin-left: 5%;
@@ -16,5 +16,83 @@
 	right: 10%;
 	font-size: 2.3em;
 	font-weight: 100;
+	bottom: 2em;
 }
+.cuerpo {
+	margin-top: 1em;
+	.col-sm-4 {
+		text-align: left;
+	}
+}
+.objetivos(@bg:red) {
+	background-color: @bg;
+
+	padding-left: 5%;
+	padding-right: 5%;
+	.numero {
+		font-size: 6em;
+		width: 20%;
+		padding-top: 0;
+	}
+	.txt {
+	
+		width: 70%;
+
+
+	}
+}
+
+.objetivo1 {
+	.objetivos(#da4553);
+}
+.objetivo2 {
+	.objetivos(#8cc051);
+}
+.objetivo3 {
+	.objetivos(#3caeda);
+}
+.objetivo4 {
+	.objetivos(#d870ad);
+}
+
+
  }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 1200px) {
+body{
+	font-size: 15px;
+}
+
+	.bg2 {
+	background-image: url(../../img/bg2.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	text-align: left;
+	position: relative;
+		.footer {
+			// position: absolute;
+			bottom: 2em;
+			padding-top: 3em;
+			background-color: transparent;
+			text-align: left;
+			color: none;
+			padding-left:5em;
+			padding-right: 1em;
+			padding-bottom: 1em;
+	}
+
+}
+.contenedorbg{
+	width: 40%;
+	text-align: left;
+	padding-top: 3em;
+	padding-left: 5em;
+	.t1 {
+		text-align: left;
+	}
+}
+}
+
+
+

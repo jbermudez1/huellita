@@ -2,8 +2,8 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .banner {
-    height: 80%;
-    min-height: 80%;
+    height: 100%;
+    min-height: 100%;
   }
   .logo {
     margin-left: 5%;
@@ -15,5 +15,97 @@
     right: 10%;
     font-size: 2.3em;
     font-weight: 100;
+    bottom: 2em;
+  }
+  .cuerpo {
+    margin-top: 1em;
+  }
+  .cuerpo .col-sm-4 {
+    text-align: left;
+  }
+  .objetivo1 {
+    background-color: #da4553;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .objetivo1 .numero {
+    font-size: 6em;
+    width: 20%;
+    padding-top: 0;
+  }
+  .objetivo1 .txt {
+    width: 70%;
+  }
+  .objetivo2 {
+    background-color: #8cc051;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .objetivo2 .numero {
+    font-size: 6em;
+    width: 20%;
+    padding-top: 0;
+  }
+  .objetivo2 .txt {
+    width: 70%;
+  }
+  .objetivo3 {
+    background-color: #3caeda;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .objetivo3 .numero {
+    font-size: 6em;
+    width: 20%;
+    padding-top: 0;
+  }
+  .objetivo3 .txt {
+    width: 70%;
+  }
+  .objetivo4 {
+    background-color: #d870ad;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .objetivo4 .numero {
+    font-size: 6em;
+    width: 20%;
+    padding-top: 0;
+  }
+  .objetivo4 .txt {
+    width: 70%;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+  .bg2 {
+    background-image: url(../../img/bg2.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    text-align: left;
+    position: relative;
+  }
+  .bg2 .footer {
+    bottom: 2em;
+    padding-top: 3em;
+    background-color: transparent;
+    text-align: left;
+    color: none;
+    padding-left: 5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+  .contenedorbg {
+    width: 40%;
+    text-align: left;
+    padding-top: 3em;
+    padding-left: 5em;
+  }
+  .contenedorbg .t1 {
+    text-align: left;
   }
 }

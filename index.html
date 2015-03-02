@@ -12,18 +12,27 @@
   </head>
 
   <body>
+    <div class="mensajePago">
+      <p class="titulos1" id="mensajePago">Gracias por tu donativo.</p>
+    </div>
     <section class="banner">
       <figure class="logo">
         <img src="img/huellita-logosvg.svg">
       </figure>
       <p class="mensaje">EL SERÍA INCAPAZ DE<br><span class="resaltado">IGNORARTE</span><br>
         <span class="chico">Fundación Huellita con Causa A.C.</span>
+        <br>
+        <span class="mensaje2 hidden-xs">
+      Fomentamos una cultura de respeto y responsabilidad hacia la vida animal. Ofrecemos auxilio, rehabilitación y adopción de animales maltratados, enfermos o accidentados.</span>
+
       </p>
+
+
     </section>
      <section class="container cuerpo">
       <div class="row">
-        <div class="col-sm-4">
-          <p class="titulos1">Dejar de Ignorarlos</p><hr>
+        <div class="col-sm-4 margenes">
+          <p class="titulos1">DEJA DE INGNORARLOS</p><hr>
             <form action="app/Core/manager.php" method="POST" id="card-form">
               <div class="donativo">
                 <span class="pesos">$</span>
@@ -33,7 +42,7 @@
               <span class="card-errors"></span>
               <!-- NOMBRE TARJETAHABIENTE -->
               <div class="form-group">
-                <input class="form-control" placeholder="Tarjetahabiente" type="text" data-conekta="card[name]"/>
+                <input class="form-control" placeholder="Nombre Completo" type="text" data-conekta="card[name]"/>
               </div>
               <!-- NUMERO DE TARJETA -->
               <div class="form-group">
@@ -41,11 +50,11 @@
               </div>
               <div class="row">
                 <div class="col-xs-3">
-                    <span>CVC</span><br>
+                    <span class="sub">CVC</span><br>
                     <input type="text" class="form-control" size="4" style="display:inline-block; width:auto" data-conekta="card[cvc]"/>
                 </div>
                 <div class="col-xs-9 text-right">
-                  <span>Expiración</span><br>
+                  <span>Expira</span><br>
                   <input type="text" size="2" class="form-control" style="display:inline-block; width:auto" data-conekta="card[exp_month]" placeholder="MM"/>
                   <span>/</span>
                 <input type="text" size="4" class="form-control" style="display:inline-block; width:auto"  data-conekta="card[exp_year]" placeholder="AAAA"/>
@@ -55,15 +64,15 @@
             </form>
           </div>
           
-          <div class="col-sm-4">
-            <p class="titulos1">Tambíen puedes donar en</p><hr>
+          <div class="col-sm-4 margenes">
+            <p class="titulos1">TAMBIÉN PUEDES DONAR EN</p><hr>
             <div class="row">
-              <div class="col-xs-5">
+              <div class="col-sm-3">
                 <img src="img/logooxxo.png">
-                <p class="sub">(Proporciona estos 16 dígitos
-                    a depósito de tarjeta)</p>
+            <!--     <p class="sub">(Proporciona estos 16 dígitos
+                    a depósito de tarjeta)</p> -->
               </div>
-              <div class="col-xs-7">
+              <div class="col-sm-9">
                 <p><b>BANAMEX</b><br>
                   4766 8400 2707 5394</p>
                 <p><b>BANCOMER</b><br>
@@ -74,11 +83,11 @@
            <hr>
             <div class="row">
 
-              <div class="col-xs-5">
+              <div class="col-sm-3">
                 <img src="img/logobanorte.png">
           
               </div>
-              <div class="col-xs-7">
+              <div class="col-sm-9">
                 <p><b>HUELLITA CON CAUSA A.C</b><br>
                   <span class="sub">Cuenta:</span> 0831423982<br>
                   <span class="sub">CLABE:</span> 072730008314239825</p>
@@ -86,39 +95,93 @@
             </div>
             <div class="row">
 
-              <div class="col-xs-5">
+              <div class="col-sm-3">
                 <img src="img/logobancomer.png">
           
               </div>
-              <div class="col-xs-7">
+              <div class="col-sm-9">
                 <p><b>HUELLITA CON CAUSA A.C</b><br>
                   <span class="sub">Cuenta:</span> 0193945987<br>
                   <span class="sub">CLABE:</span> 012730001939459872</p>
               </div>
             </div>
-            <hr>
-            <div class="row text-center">
+         
+     <!--        <div class="row text-center">
               <img src="img/bntpaypal.png">
-            </div>
+            </div> -->
             
           </div>
-        <div class="col-sm-4">
-          <p class="titulos1">O con donativos en especie</p><hr>
+        <div class="col-sm-4 margenes">
+          <p class="titulos1">O CON DONATIVOS EN ESPECIE</p><hr>
           <p><b>JUEVES</b> de 5pm a 8pm en el estacionamiento de <b>Jardín Botanico Culiacán.</b> (No llevamos perritos en adopción)</p>
           <a href="https://www.google.com.mx/maps/place/Jard%C3%ADn+Bot%C3%A1nico+Culiac%C3%A1n/@24.826097,-107.386361,17z/data=!3m1!4b1!4m2!3m1!1s0x86bcda02be4b8197:0xce96795018e31371" target="_blank">
           <img src="img/botanico.png"></a>
-          <hr>
-          <p><b>DOMINGOS</b> de 3pm a 6pm en <b>Parque las Riberas</b> atrás de Plaza Forum (Sears)</p>
+       
+   <!--        <p><b>DOMINGOS</b> de 3pm a 6pm en <b>Parque las Riberas</b> atrás de Plaza Forum (Sears)</p>
           <a href="https://www.google.com.mx/maps/place/Parque+las+Riberas/@24.813056,-107.398651,17z/data=!3m1!4b1!4m2!3m1!1s0x86bcd0a7bd4ce66f:0x6dc4ad373e7a5598" target="_blank">
-          <img src="img/riberas.png"></a>
+          <img src="img/riberas.png"></a> -->
 
           
         </div>
       </div>
-    </section>   
+    </section>
 
-    <footer>
-    </footer>
+    <section class="info">
+      <div class="container margenes">
+          <p class="t1">LA MISIÓN DE HUELLITA</p>
+          <p class="text-center">
+          Queremos resolver el problema de animales domésticos (perros y gatos) abandonados A NIVEL ESTADO, proporcionando una solución definitiva por medio de la PREVENCIÓN y la ESTERILIZACIÓN para erradicar dicha problemática, gestionando el plan de trabajo, así como los apoyos para conservar de forma permanente esta solución para incluir e involucrar a la sociedad de todos los estratos sociales y lograr de esta forma el cambio en el bienestar de los animales y la sociedad en general para evitar que el problema de maltrato siga en aumento así como un posible futuro problema de salud pública.
+</p>
+      </div>
+      <article class="objetivo1">
+          <div class="numero">01</div>
+          <div class="txt">
+            <h4>Programa de educación permanente.</h4>
+            Impartir pláticas y conferencias a nivel estatal y en todos los niveles educativos, donde trataremos temas de  Tenencia Responsable de mascotas y hacer labor de conciencia sobre la Esterilización como método de control de población y salud de los animales domésticos.<br><br>
+
+            Para Preparatoria y Profesional invitaremos a los estudiantes a colaborar en este proyecto y en nuestra fundación realizando su servicio social donde se les destinará diferentes responsabilidades.
+
+          </div>
+      </article>
+      <article class="objetivo2">
+          <div class="numero">02</div>
+          <div class="txt">
+            <h4>Programa de esterilización permanente.</h4>
+Con la contratación de planta de un médico veterinario especializado en esterilizaciones rápidas y económicas, así como la difusión que se llevará a cabo en conjunto con toda la gente que participe en el programa, por monitoreo colonia por colonia y por medio de diversos medios de comunicación como la prensa, radio, televisión y redes sociales combinado con publicidad impresa como pósters, volantes y espectaculares que describan los beneficios de la esterilización a corto plazo.</div>
+      </article>        
+      <article class="objetivo3">
+          <div class="numero">03</div>
+          <div class="txt">
+            <h4>Programa de rehabilitación de perros callejeros.</h4>
+Se atenderán diversos problemas de salud de animales callejeros a nivel estado, en conjunto con alumnos en servicio social que nos apoyarán en el traslado y rehabilitación de animales con problemas de sarna, babéis, moquillo, parvovirus, cáncer, accidentados o algún tipo de maltrato, atendiendo el mayor número posible de casos semanales que se rehabilitarán y promoverá su adopción una vez dados de alta, dichos animales se resguardarán en la casa puente o refugio para su bienestar en lo que encuentran un hogar responsable donde vivir.</div>
+      </article>
+      <article class="objetivo4">
+          <div class="numero">04</div>
+          <div class="txt">
+            <h4>Programa de adopción de animales rehabilitados.</h4>
+En este programa promoveremos la adopción en hogares responsables para brindar una segunda oportunidad a perros y gatos rehabilitados, con la participación de nuestra gente daremos seguimiento del bienestar de dichos animales. Este programa se llevará a cabo con el apoyo de diversos medios de comunicación, hablará sobre los beneficios de la adopción y de igual forma seguiremos con presencia en diferentes puntos de la ciudad siempre presentes nuestros perros y gatos rehabilitados, vacunados y listos para una nueva vida.</div>
+      </article> 
+    </section>
+
+    <section class=" bg2">
+      <div class="contenedorbg">
+            <img class="" src="img/campana.jpg">
+
+        <p>Esta es una de nuestra labor más importante ya que por medio de Campañas de Esterilización Masivas, así como los programas y jornadas permanentes, nos permiten proveer bienestar para muchos animales y evitar miles de crías indeseadas muriendo en las calles por enfermedad, hambre o actos de crueldad. Realizamos campañas con promedio de 300 animales esterilizados donde se le provee el servicio a personas de estrato social bajo que no tienen el poder económico para una cirugía en clínica veterinaria. El resultado ha sido enorme, cada vez, más gente desea esterilizar a sus mascotas.
+        </p>
+
+       <!--   <p class="t1">HUELLATÓN CON CAUSA ANIMAL</p> -->
+         <img class="" src="img/huellaton.jpg">
+        <p>Huellita con causa A.C. realiza diversos eventos de recaudación para obtener los insumos para realizar esta titánica labor de resolver un problema de salud pública de la que nadie se responsabiliza pero nos compete a todos. En estos eventos la participación de la gente es importante pues son quienes donan Alimento, Medicamentos o Donativo, esta es de la única forma que ha sido posible sustentar a tantos animales en tratamiento y adopción, a su vez nos da la oportunidad de acercarnos a todos los que nos apoyan y son parte importante de esta labor.
+
+        </p>
+      </div>
+      <div class="footer">
+        Huellita Con Causa A.C. 2015<br>
+        Design in <a href="http://proyeccione.com" target="_blank">Proyeccione</a>
+      </footer>
+    </section>
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery.formatCurrency-1.4.0.min.js"></script>

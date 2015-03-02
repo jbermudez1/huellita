@@ -3,6 +3,8 @@ $(document).ready( inicio );
 var dinero;
 
 function inicio () {
+
+
   $('.cantidad').focus(function(){
     dinero =$(this).val();
     $(this).val("");
@@ -43,6 +45,7 @@ conektaSuccessResponseHandler = function(token) {
 
   /* and submit */
   // console.log(token.id)
+  $form.find("button").prop("disabled", false);
   $form.get(0).submit();
 };
 
@@ -56,3 +59,15 @@ conektaErrorResponseHandler = function(response) {
   $form.find(".card-errors").text(response.message);
   $form.find("button").prop("disabled", false);
 };
+
+
+// MUESTRA EL MESAJE DEL PAGO
+
+function muestraMnesaje(){
+  setTimeout(function() {
+       $(".mensajePago").fadeIn();
+}, 3000);
+
+ $(".mensajePago").fadeOut();
+
+}
